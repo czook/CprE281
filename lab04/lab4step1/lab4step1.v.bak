@@ -1,0 +1,7 @@
+module lab4step1
+	input F, C, G, W;
+	output A;
+	
+	assign A = (~F&C&G) | (F&~C&~G) | (~F&G&W) | (F&~G&~W)
+	
+endmodule

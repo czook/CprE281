@@ -1,0 +1,8 @@
+module lab3step2(A, C, G, W);
+	input C, G, W;
+	output A;
+	
+	assign A = ((~c|G|~W)&(C|~G|W))
+
+endmodule
+	
