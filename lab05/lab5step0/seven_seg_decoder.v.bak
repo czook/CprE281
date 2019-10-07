@@ -1,0 +1,11 @@
+module seven_seg_decoder(Z, Y, X, W, A, B, C, D, E, F, G);
+	input Z, Y, X, W;
+	output A, B, C, D, E, F, G;
+	
+	always @(Z or Y or X or W)
+	begin
+		case ({Z, Y, X, W})
+			
+		endcase
+	end
+endmodule
