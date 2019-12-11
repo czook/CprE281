@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cout",
+					"strict" : false
+				},
+				{
+					"name" : "overflow",
+					"strict" : false
+				},
+				{
+					"name" : "PA",
+					"strict" : false
+				},
+				{
+					"name" : "PB",
+					"strict" : false
+				},
+				{
+					"name" : "PC",
+					"strict" : false
+				},
+				{
+					"name" : "PD",
+					"strict" : false
+				},
+				{
+					"name" : "PE",
+					"strict" : false
+				},
+				{
+					"name" : "PF",
+					"strict" : false
+				},
+				{
+					"name" : "PG",
+					"strict" : false
+				},
+				{
+					"name" : "QA",
+					"strict" : false
+				},
+				{
+					"name" : "QB",
+					"strict" : false
+				},
+				{
+					"name" : "QC",
+					"strict" : false
+				},
+				{
+					"name" : "QD",
+					"strict" : false
+				},
+				{
+					"name" : "QE",
+					"strict" : false
+				},
+				{
+					"name" : "QF",
+					"strict" : false
+				},
+				{
+					"name" : "QG",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name1",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name2",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name3",
+					"strict" : false
+				},
+				{
+					"name" : "RQ0",
+					"strict" : false
+				},
+				{
+					"name" : "RQ1",
+					"strict" : false
+				},
+				{
+					"name" : "RQ2",
+					"strict" : false
+				},
+				{
+					"name" : "control",
+					"strict" : false
+				},
+				{
+					"name" : "RP0",
+					"strict" : false
+				},
+				{
+					"name" : "RP1",
+					"strict" : false
+				},
+				{
+					"name" : "RP2",
+					"strict" : false
+				},
+				{
+					"name" : "sel",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "CLRN",
+					"strict" : false
+				},
+				{
+					"name" : "WA0",
+					"strict" : false
+				},
+				{
+					"name" : "WA1",
+					"strict" : false
+				},
+				{
+					"name" : "WA2",
+					"strict" : false
+				},
+				{
+					"name" : "WR",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Oct 19 11:43:16 2017
-Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+Fitter Status : Successful - Thu Dec 05 21:50:10 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : lab07step0
 Top-level Entity Name : lab07step0
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 9 / 114,480 ( < 1 % )
-    Total combinational functions : 9 / 114,480 ( < 1 % )
+Total logic elements : 11 / 114,480 ( < 1 % )
+    Total combinational functions : 11 / 114,480 ( < 1 % )
     Dedicated logic registers : 0 / 114,480 ( 0 % )
 Total registers : 0
 Total pins : 15 / 529 ( 3 % )

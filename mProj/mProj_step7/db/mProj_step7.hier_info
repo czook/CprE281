@@ -1,0 +1,16 @@
+|mProj_step7
+w => p.IN0
+w => p.IN0
+x => p.IN0
+x => p.IN1
+x => p.IN0
+x => p.IN1
+y => p.IN1
+y => p.IN1
+y => p.IN1
+z => p.IN1
+z => p.IN1
+z => p.IN1
+p << p.DB_MAX_OUTPUT_PORT_TYPE
+
+

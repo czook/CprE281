@@ -4,63 +4,63 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "G21--S3",
+					"name" : "cout",
 					"strict" : false
 				},
 				{
-					"name" : "G19--Cout",
+					"name" : "overflow",
 					"strict" : false
 				},
 				{
-					"name" : "F19--OVERFLOW",
+					"name" : "s2",
 					"strict" : false
 				},
 				{
-					"name" : "G22--S2",
+					"name" : "s3",
 					"strict" : false
 				},
 				{
-					"name" : "G20--S1",
+					"name" : "s1",
 					"strict" : false
 				},
 				{
-					"name" : "H21--S0",
+					"name" : "s0",
 					"strict" : false
 				},
 				{
-					"name" : "AB28--CONTROL",
+					"name" : "Y3",
 					"strict" : false
 				},
 				{
-					"name" : "Y24--X2",
+					"name" : "control",
 					"strict" : false
 				},
 				{
-					"name" : "AA22--X1",
+					"name" : "X3",
 					"strict" : false
 				},
 				{
-					"name" : "AA23-X0",
+					"name" : "Y2",
 					"strict" : false
 				},
 				{
-					"name" : "AC24--Y0",
+					"name" : "X2",
 					"strict" : false
 				},
 				{
-					"name" : "AB24--Y1",
+					"name" : "X0",
 					"strict" : false
 				},
 				{
-					"name" : "AB23--Y2",
+					"name" : "Y0",
 					"strict" : false
 				},
 				{
-					"name" : "Y23--X3",
+					"name" : "X1",
 					"strict" : false
 				},
 				{
-					"name" : "AA24--Y3",
+					"name" : "Y1",
 					"strict" : false
 				}
 			]

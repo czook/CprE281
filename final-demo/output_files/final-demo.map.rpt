@@ -1,0 +1,410 @@
+Analysis & Synthesis report for final-demo
+Tue Dec 10 14:08:14 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 10 14:08:14 2019           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                      ; final-demo                                      ;
+; Top-level Entity Name              ; final-demo                                      ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 152                                             ;
+;     Total combinational functions  ; 120                                             ;
+;     Dedicated logic registers      ; 35                                              ;
+; Total registers                    ; 35                                              ;
+; Total pins                         ; 83                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; final-demo         ; final-demo         ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------+---------+
+; final-demo.bdf                   ; yes             ; User Block Diagram/Schematic File        ; U:/cpre/281/final-demo/final-demo.bdf      ;         ;
+; seven_seg_decoder.v              ; yes             ; Auto-Found Verilog HDL File              ; U:/cpre/281/final-demo/seven_seg_decoder.v ;         ;
+; registerfile.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/registerfile.bdf    ;         ;
+; mux8_4b.v                        ; yes             ; Auto-Found Verilog HDL File              ; U:/cpre/281/final-demo/mux8_4b.v           ;         ;
+; register.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/register.bdf        ;         ;
+; 2-1mux.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/2-1mux.bdf          ;         ;
+; 3-8decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/3-8decoder.bdf      ;         ;
+; set-state.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/set-state.bdf       ;         ;
+; 2-1mux_3b.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/2-1mux_3b.bdf       ;         ;
+; fsm_ordercheck.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/fsm_ordercheck.bdf  ;         ;
+; fsm.v                            ; yes             ; Auto-Found Verilog HDL File              ; U:/cpre/281/final-demo/fsm.v               ;         ;
+; comparator.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/comparator.bdf      ;         ;
+; 4bitsub.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/4bitsub.bdf         ;         ;
+; lab7step0.v                      ; yes             ; Auto-Found Verilog HDL File              ; U:/cpre/281/final-demo/lab7step0.v         ;         ;
+; next_3bitadder.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/next_3bitadder.bdf  ;         ;
+; brokenad.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/cpre/281/final-demo/brokenad.bdf        ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 152       ;
+;                                             ;           ;
+; Total combinational functions               ; 120       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 101       ;
+;     -- 3 input functions                    ; 19        ;
+;     -- <=2 input functions                  ; 0         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 120       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 35        ;
+;     -- Dedicated logic registers            ; 35        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 83        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 35        ;
+; Total fan-out                               ; 717       ;
+; Average fan-out                             ; 2.23      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Entity Name       ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------------+--------------+
+; |final-demo                  ; 120 (0)             ; 35 (0)                    ; 0           ; 0            ; 0       ; 0         ; 83   ; 0            ; |final-demo                                                ; final-demo        ; work         ;
+;    |2-1mux_3b:inst16|        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst16                               ; 2-1mux_3b         ; work         ;
+;       |2-1MUX:inst1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst16|2-1MUX:inst1                  ; 2-1MUX            ; work         ;
+;       |2-1MUX:inst2|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst16|2-1MUX:inst2                  ; 2-1MUX            ; work         ;
+;       |2-1MUX:inst|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst16|2-1MUX:inst                   ; 2-1MUX            ; work         ;
+;    |2-1mux_3b:inst17|        ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst17                               ; 2-1mux_3b         ; work         ;
+;       |2-1MUX:inst1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst17|2-1MUX:inst1                  ; 2-1MUX            ; work         ;
+;       |2-1MUX:inst2|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst17|2-1MUX:inst2                  ; 2-1MUX            ; work         ;
+;       |2-1MUX:inst|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|2-1mux_3b:inst17|2-1MUX:inst                   ; 2-1MUX            ; work         ;
+;    |BrokenAd:inst14|         ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|BrokenAd:inst14                                ; BrokenAd          ; work         ;
+;       |2-1MUX:inst2|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|BrokenAd:inst14|2-1MUX:inst2                   ; 2-1MUX            ; work         ;
+;       |2-1MUX:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|BrokenAd:inst14|2-1MUX:inst3                   ; 2-1MUX            ; work         ;
+;       |2-1MUX:inst|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|BrokenAd:inst14|2-1MUX:inst                    ; 2-1MUX            ; work         ;
+;    |FSM_ordercheck:inst11|   ; 3 (1)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|FSM_ordercheck:inst11                          ; FSM_ordercheck    ; work         ;
+;       |FSM:inst|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|FSM_ordercheck:inst11|FSM:inst                 ; FSM               ; work         ;
+;    |comparator:inst15|       ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|comparator:inst15                              ; comparator        ; work         ;
+;       |4bitSub:inst|         ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|comparator:inst15|4bitSub:inst                 ; 4bitSub           ; work         ;
+;          |lab7step0:inst1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|comparator:inst15|4bitSub:inst|lab7step0:inst1 ; lab7step0         ; work         ;
+;          |lab7step0:inst2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|comparator:inst15|4bitSub:inst|lab7step0:inst2 ; lab7step0         ; work         ;
+;          |lab7step0:inst3|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|comparator:inst15|4bitSub:inst|lab7step0:inst3 ; lab7step0         ; work         ;
+;          |lab7step0:inst|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|comparator:inst15|4bitSub:inst|lab7step0:inst  ; lab7step0         ; work         ;
+;    |registerfile:inst|       ; 47 (0)              ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst                              ; registerfile      ; work         ;
+;       |3-8Decoder:inst1|     ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|3-8Decoder:inst1             ; 3-8Decoder        ; work         ;
+;       |mux8_4b:inst17|       ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|mux8_4b:inst17               ; mux8_4b           ; work         ;
+;       |mux8_4b:inst9|        ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|mux8_4b:inst9                ; mux8_4b           ; work         ;
+;       |register:inst2|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst2               ; register          ; work         ;
+;       |register:inst3|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst3               ; register          ; work         ;
+;       |register:inst4|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst4               ; register          ; work         ;
+;       |register:inst5|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst5               ; register          ; work         ;
+;       |register:inst6|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst6               ; register          ; work         ;
+;       |register:inst7|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst7               ; register          ; work         ;
+;       |register:inst8|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst8               ; register          ; work         ;
+;       |register:inst|        ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|registerfile:inst|register:inst                ; register          ; work         ;
+;    |seven_seg_decoder:inst2| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst2                        ; seven_seg_decoder ; work         ;
+;    |seven_seg_decoder:inst3| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst3                        ; seven_seg_decoder ; work         ;
+;    |seven_seg_decoder:inst4| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst4                        ; seven_seg_decoder ; work         ;
+;    |seven_seg_decoder:inst5| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst5                        ; seven_seg_decoder ; work         ;
+;    |seven_seg_decoder:inst6| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst6                        ; seven_seg_decoder ; work         ;
+;    |seven_seg_decoder:inst7| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst7                        ; seven_seg_decoder ; work         ;
+;    |seven_seg_decoder:inst8| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst8                        ; seven_seg_decoder ; work         ;
+;    |seven_seg_decoder:inst9| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final-demo|seven_seg_decoder:inst9                        ; seven_seg_decoder ; work         ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; FSM_ordercheck:inst11|inst2           ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 35    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |final-demo|registerfile:inst|mux8_4b:inst9|F[1]  ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |final-demo|registerfile:inst|mux8_4b:inst17|F[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 83                          ;
+; cycloneiii_ff         ; 35                          ;
+;     CLR               ; 3                           ;
+;     ENA               ; 32                          ;
+; cycloneiii_lcell_comb ; 130                         ;
+;     normal            ; 130                         ;
+;         1 data inputs ; 10                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 101                         ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 4.22                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Tue Dec 10 14:08:02 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final-demo -c final-demo
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file final-demo.bdf
+    Info (12023): Found entity 1: final-demo
+Info (12127): Elaborating entity "final-demo" for the top level hierarchy
+Warning (12125): Using design file seven_seg_decoder.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: seven_seg_decoder File: U:/cpre/281/final-demo/seven_seg_decoder.v Line: 1
+Info (12128): Elaborating entity "seven_seg_decoder" for hierarchy "seven_seg_decoder:inst2"
+Warning (12125): Using design file registerfile.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: registerfile
+Info (12128): Elaborating entity "registerfile" for hierarchy "registerfile:inst"
+Warning (12125): Using design file mux8_4b.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mux8_4b File: U:/cpre/281/final-demo/mux8_4b.v Line: 1
+Info (12128): Elaborating entity "mux8_4b" for hierarchy "registerfile:inst|mux8_4b:inst17"
+Warning (12125): Using design file register.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: register
+Info (12128): Elaborating entity "register" for hierarchy "registerfile:inst|register:inst"
+Warning (12125): Using design file 2-1mux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 2-1MUX
+Info (12128): Elaborating entity "2-1MUX" for hierarchy "registerfile:inst|register:inst|2-1MUX:inst4"
+Warning (12125): Using design file 3-8decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 3-8Decoder
+Info (12128): Elaborating entity "3-8Decoder" for hierarchy "registerfile:inst|3-8Decoder:inst1"
+Warning (12125): Using design file set-state.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: set-state
+Info (12128): Elaborating entity "set-state" for hierarchy "set-state:inst10"
+Warning (12125): Using design file 2-1mux_3b.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 2-1mux_3b
+Info (12128): Elaborating entity "2-1mux_3b" for hierarchy "2-1mux_3b:inst16"
+Warning (12125): Using design file fsm_ordercheck.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FSM_ordercheck
+Info (12128): Elaborating entity "FSM_ordercheck" for hierarchy "FSM_ordercheck:inst11"
+Warning (275013): Port "clk" of type FSM and instance "inst" is missing source signal
+Warning (12125): Using design file fsm.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FSM File: U:/cpre/281/final-demo/fsm.v Line: 1
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM_ordercheck:inst11|FSM:inst"
+Warning (12125): Using design file comparator.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: comparator
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:inst15"
+Warning (12125): Using design file 4bitsub.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 4bitSub
+Info (12128): Elaborating entity "4bitSub" for hierarchy "comparator:inst15|4bitSub:inst"
+Warning (12125): Using design file lab7step0.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lab7step0 File: U:/cpre/281/final-demo/lab7step0.v Line: 1
+Info (12128): Elaborating entity "lab7step0" for hierarchy "comparator:inst15|4bitSub:inst|lab7step0:inst"
+Warning (12125): Using design file next_3bitadder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: next_3bitadder
+Info (12128): Elaborating entity "next_3bitadder" for hierarchy "next_3bitadder:inst12"
+Warning (12125): Using design file brokenad.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: BrokenAd
+Info (12128): Elaborating entity "BrokenAd" for hierarchy "BrokenAd:inst14"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 235 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 68 output pins
+    Info (21061): Implemented 152 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Tue Dec 10 14:08:14 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:18
+
+

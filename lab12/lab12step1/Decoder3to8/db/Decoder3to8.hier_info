@@ -1,0 +1,15 @@
+|Decoder3to8
+x0 => Decoder0.IN0
+x1 => Decoder0.IN1
+x2 => Decoder0.IN2
+w0 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+w1 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+w2 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+w3 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+w4 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+w5 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+w6 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+w7 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+en => Decoder0.IN3
+
+

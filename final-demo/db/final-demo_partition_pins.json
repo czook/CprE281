@@ -1,0 +1,341 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "AA",
+					"strict" : false
+				},
+				{
+					"name" : "AB",
+					"strict" : false
+				},
+				{
+					"name" : "AC",
+					"strict" : false
+				},
+				{
+					"name" : "AD",
+					"strict" : false
+				},
+				{
+					"name" : "AE",
+					"strict" : false
+				},
+				{
+					"name" : "AF",
+					"strict" : false
+				},
+				{
+					"name" : "AG",
+					"strict" : false
+				},
+				{
+					"name" : "BA",
+					"strict" : false
+				},
+				{
+					"name" : "BB",
+					"strict" : false
+				},
+				{
+					"name" : "BC",
+					"strict" : false
+				},
+				{
+					"name" : "BD",
+					"strict" : false
+				},
+				{
+					"name" : "BE",
+					"strict" : false
+				},
+				{
+					"name" : "BF",
+					"strict" : false
+				},
+				{
+					"name" : "BG",
+					"strict" : false
+				},
+				{
+					"name" : "CA",
+					"strict" : false
+				},
+				{
+					"name" : "CB",
+					"strict" : false
+				},
+				{
+					"name" : "CC",
+					"strict" : false
+				},
+				{
+					"name" : "CD",
+					"strict" : false
+				},
+				{
+					"name" : "CE",
+					"strict" : false
+				},
+				{
+					"name" : "CF",
+					"strict" : false
+				},
+				{
+					"name" : "CG",
+					"strict" : false
+				},
+				{
+					"name" : "DA",
+					"strict" : false
+				},
+				{
+					"name" : "DB",
+					"strict" : false
+				},
+				{
+					"name" : "DC",
+					"strict" : false
+				},
+				{
+					"name" : "DD",
+					"strict" : false
+				},
+				{
+					"name" : "DE",
+					"strict" : false
+				},
+				{
+					"name" : "DF",
+					"strict" : false
+				},
+				{
+					"name" : "DG",
+					"strict" : false
+				},
+				{
+					"name" : "HA",
+					"strict" : false
+				},
+				{
+					"name" : "HB",
+					"strict" : false
+				},
+				{
+					"name" : "HC",
+					"strict" : false
+				},
+				{
+					"name" : "HD",
+					"strict" : false
+				},
+				{
+					"name" : "HE",
+					"strict" : false
+				},
+				{
+					"name" : "HF",
+					"strict" : false
+				},
+				{
+					"name" : "HG",
+					"strict" : false
+				},
+				{
+					"name" : "GA",
+					"strict" : false
+				},
+				{
+					"name" : "GB",
+					"strict" : false
+				},
+				{
+					"name" : "GC",
+					"strict" : false
+				},
+				{
+					"name" : "GD",
+					"strict" : false
+				},
+				{
+					"name" : "GE",
+					"strict" : false
+				},
+				{
+					"name" : "GF",
+					"strict" : false
+				},
+				{
+					"name" : "GG",
+					"strict" : false
+				},
+				{
+					"name" : "FA",
+					"strict" : false
+				},
+				{
+					"name" : "FB",
+					"strict" : false
+				},
+				{
+					"name" : "FC",
+					"strict" : false
+				},
+				{
+					"name" : "FD",
+					"strict" : false
+				},
+				{
+					"name" : "FE",
+					"strict" : false
+				},
+				{
+					"name" : "FF",
+					"strict" : false
+				},
+				{
+					"name" : "FG",
+					"strict" : false
+				},
+				{
+					"name" : "EA",
+					"strict" : false
+				},
+				{
+					"name" : "EB",
+					"strict" : false
+				},
+				{
+					"name" : "EC",
+					"strict" : false
+				},
+				{
+					"name" : "ED",
+					"strict" : false
+				},
+				{
+					"name" : "EE",
+					"strict" : false
+				},
+				{
+					"name" : "EF",
+					"strict" : false
+				},
+				{
+					"name" : "EG",
+					"strict" : false
+				},
+				{
+					"name" : "ad-checking1",
+					"strict" : false
+				},
+				{
+					"name" : "ad-checking2",
+					"strict" : false
+				},
+				{
+					"name" : "ad-checking0",
+					"strict" : false
+				},
+				{
+					"name" : "Read2",
+					"strict" : false
+				},
+				{
+					"name" : "Read1",
+					"strict" : false
+				},
+				{
+					"name" : "Read0",
+					"strict" : false
+				},
+				{
+					"name" : "greaterthen",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name1",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name2",
+					"strict" : false
+				},
+				{
+					"name" : "BadOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BadOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BadOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "State_set",
+					"strict" : false
+				},
+				{
+					"name" : "ReadAdress2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadAdress2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadAdress2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadAdress1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadAdress1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadAdress1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "WriteAd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteAd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteAd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+module Mux8_4b(s, w0, w1, w2, w3, w4, w5, w6, w7, f);
+input[2:0] s;
+input [3:0] w0, w1, w2, w3, w4, w5, w6, w7;
+output [3:0] f;
+wire [3:0] mux1, mux2, mux3, mux4,  mux5, mux6;
+assign mux1 = s[0] ? w1 : w0;
+assign mux2 = s[0] ? w3 : w2;
+assign mux3 = s[0] ? w5 : w4;
+assign mux4 = s[0] ? w7 : w6;
+assign mux5 = s[1] ? mux2 : mux1;
+assign mux6 = s[1] ? mux4 : mux3;
+assign f = s[2] ? mux6 : mux5;
+endmodule
