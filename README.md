@@ -1,8 +1,6 @@
-# CS228
-Data Structures Class with James Lathrop (Java)
+# CprE 281
+Digital Logic with Alexander Stoytchev
 
-
-I learned about Data Structures, Algorithms, Runtime Analysis, and other Java properties in this class
 
 # DO NOT USE THIS TO CHEAT
 
